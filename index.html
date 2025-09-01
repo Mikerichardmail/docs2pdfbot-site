@@ -3,60 +3,111 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>File2PDF Converter Bot - Word to PDF Telegram Bot</title>
-  <meta name="description" content="Convert Word and Images to PDF instantly with File2PDF Telegram Bot. Free, secure, and super fast inside Telegram.">
+  <title>Word to PDF Telegram Bot | File2PDF Converter</title>
+  <meta name="description" content="Convert Word and Image files to PDF instantly with File2PDF Telegram Bot. Free, secure, fast, and no signup required.">
+  <meta name="keywords" content="Word to PDF Telegram Bot, Convert Word to PDF free, PDF converter bot, Docs2PDFbot, Image to PDF, Telegram PDF Bot">
+  <link rel="canonical" href="https://pdfword.xyz/" />
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.0/dist/cdn.min.js" defer></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .floating-cta {
+      position: fixed; bottom: 20px; right: 20px;
+      background: #ef4444; color: #fff; padding: 12px 20px;
+      border-radius: 50px; font-weight: bold;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      z-index: 50;
+    }
+  </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 w-full bg-white shadow-md z-40">
+    <div class="max-w-6xl mx-auto flex justify-between items-center px-6 py-3">
+      <span class="font-bold text-blue-600 text-lg">File2PDF Bot</span>
+      <div class="space-x-6 hidden md:flex">
+        <a href="#how" class="hover:text-blue-600">How It Works</a>
+        <a href="#features" class="hover:text-blue-600">Features</a>
+        <a href="#faq" class="hover:text-blue-600">FAQ</a>
+        <a href="#contact" class="hover:text-blue-600">Contact</a>
+      </div>
+    </div>
+  </nav>
+
   <!-- Hero Section -->
-  <section class="text-center py-16 bg-blue-600 text-white">
-    <h1 class="text-4xl font-bold">Convert Word & Images to PDF Instantly 🚀</h1>
-    <p class="mt-4 text-lg">No app install, no signup. Just send your file to the bot and get a PDF instantly.</p>
-    <a href="https://t.me/Docs2PDFbot" class="mt-6 inline-block bg-red-500 text-white font-semibold px-6 py-3 rounded-lg shadow-lg">Start on Telegram</a>
+  <section class="text-center py-32 bg-gradient-to-r from-blue-600 to-indigo-700 text-white">
+    <h1 class="text-5xl font-extrabold">Word to PDF Converter Bot 📄➡️📕</h1>
+    <p class="mt-6 text-xl max-w-2xl mx-auto">Convert Word and Image files into PDF instantly inside Telegram. 100% Free, Secure, and Super Fast.</p>
+    <div class="mt-8 space-x-4">
+      <a href="https://t.me/Docs2PDFbot" class="bg-red-500 hover:bg-red-600 px-8 py-4 rounded-xl shadow-lg font-bold">🚀 Start on Telegram</a>
+      <a href="#how" class="bg-white text-blue-600 px-8 py-4 rounded-xl shadow-lg font-bold">Learn More</a>
+    </div>
   </section>
 
-  <!-- How it Works -->
-  <section class="py-16 max-w-4xl mx-auto">
-    <h2 class="text-3xl font-bold text-center mb-10">How It Works</h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-      <div><span class="text-4xl">1️⃣</span><p class="mt-2">Open @Docs2PDFbot on Telegram</p></div>
-      <div><span class="text-4xl">2️⃣</span><p class="mt-2">Send your Word file or Images</p></div>
-      <div><span class="text-4xl">3️⃣</span><p class="mt-2">Get a high-quality PDF in seconds</p></div>
+  <!-- How It Works -->
+  <section id="how" class="py-20 max-w-5xl mx-auto px-6">
+    <h2 class="text-4xl font-bold text-center mb-14">How It Works</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+      <div class="p-6 bg-white shadow-md rounded-xl"><span class="text-5xl">1️⃣</span><p class="mt-4 font-medium">Open @Docs2PDFbot on Telegram</p></div>
+      <div class="p-6 bg-white shadow-md rounded-xl"><span class="text-5xl">2️⃣</span><p class="mt-4 font-medium">Send your Word file or Images</p></div>
+      <div class="p-6 bg-white shadow-md rounded-xl"><span class="text-5xl">3️⃣</span><p class="mt-4 font-medium">Get a high-quality PDF in seconds</p></div>
     </div>
   </section>
 
   <!-- Features -->
-  <section class="py-16 bg-gray-100">
-    <h2 class="text-3xl font-bold text-center mb-10">Features</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-      <p>✅ Convert Word (.docx) → PDF</p>
-      <p>✅ Convert Images → PDF</p>
-      <p>✅ 100% Free & Secure</p>
+  <section id="features" class="py-20 bg-gray-100">
+    <h2 class="text-4xl font-bold text-center mb-14">Why Choose File2PDF Bot?</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto px-6">
+      <p>✅ Convert Word (.docx) → PDF with perfect formatting</p>
+      <p>✅ Convert Images (JPG, PNG) → PDF instantly</p>
+      <p>✅ 100% Free to use without hidden charges</p>
       <p>✅ Works on Mobile & Desktop Telegram</p>
-      <p>✅ No Signup, No Ads</p>
+      <p>✅ No Signup, No Ads – just conversion</p>
+      <p>✅ Secure: Files are deleted automatically</p>
     </div>
   </section>
 
   <!-- FAQ -->
-  <section class="py-16 max-w-4xl mx-auto">
-    <h2 class="text-3xl font-bold text-center mb-10">FAQ</h2>
-    <div class="space-y-6">
-      <div><strong>Is it free?</strong><br>Yes, 100% free.</div>
-      <div><strong>Do I need to install any app?</strong><br>No, only Telegram.</div>
-      <div><strong>Are my files safe?</strong><br>Yes, files are private & auto-deleted after conversion.</div>
+  <section id="faq" class="py-20 max-w-5xl mx-auto px-6" x-data="{ open: null }">
+    <h2 class="text-4xl font-bold text-center mb-14">Frequently Asked Questions</h2>
+    <div class="space-y-4">
+      <div>
+        <button class="w-full text-left bg-white p-4 rounded shadow" @click="open === 1 ? open = null : open = 1">Is File2PDF Bot free?</button>
+        <div x-show="open === 1" class="p-4 bg-gray-100 rounded">Yes, 100% free without hidden costs.</div>
+      </div>
+      <div>
+        <button class="w-full text-left bg-white p-4 rounded shadow" @click="open === 2 ? open = null : open = 2">Do I need to install anything?</button>
+        <div x-show="open === 2" class="p-4 bg-gray-100 rounded">No, just use Telegram.</div>
+      </div>
+      <div>
+        <button class="w-full text-left bg-white p-4 rounded shadow" @click="open === 3 ? open = null : open = 3">Are my files safe?</button>
+        <div x-show="open === 3" class="p-4 bg-gray-100 rounded">Yes, files are private & deleted automatically after conversion.</div>
+      </div>
+      <div>
+        <button class="w-full text-left bg-white p-4 rounded shadow" @click="open === 4 ? open = null : open = 4">Does it work on all devices?</button>
+        <div x-show="open === 4" class="p-4 bg-gray-100 rounded">Yes, it works on iPhone, Android, and Desktop Telegram.</div>
+      </div>
     </div>
   </section>
 
-  <!-- CTA -->
-  <section class="text-center py-16 bg-blue-600 text-white">
-    <h2 class="text-3xl font-bold">Ready to Convert Your Files?</h2>
-    <a href="https://t.me/Docs2PDFbot" class="mt-6 inline-block bg-red-500 text-white font-semibold px-6 py-3 rounded-lg shadow-lg">Try @Docs2PDFbot Now</a>
+  <!-- Contact -->
+  <section id="contact" class="py-20 bg-gray-100">
+    <h2 class="text-4xl font-bold text-center mb-14">Contact Us</h2>
+    <div class="max-w-xl mx-auto text-center">
+      <p>Need help or have suggestions? Reach us via Telegram.</p>
+      <a href="https://t.me/Docs2PDFbot" class="mt-6 inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg shadow">Message on Telegram</a>
+    </div>
   </section>
 
   <!-- Footer -->
-  <footer class="text-center py-6 bg-gray-800 text-white">
-    <p>© 2025 File2PDF Converter Bot. All rights reserved.</p>
-    <p><a href="#" class="underline">Privacy Policy</a> | <a href="#" class="underline">Contact</a></p>
+  <footer class="text-center py-8 bg-gray-900 text-gray-400">
+    <p>© 2025 File2PDF Converter Bot | <a href="https://pdfword.xyz/" class="underline">pdfword.xyz</a></p>
+    <p><a href="#" class="underline">Privacy Policy</a> | <a href="#contact" class="underline">Contact</a></p>
   </footer>
+
+  <!-- Floating CTA -->
+  <a href="https://t.me/Docs2PDFbot" class="floating-cta">🚀 Try Now</a>
+
 </body>
 </html>
